@@ -1,0 +1,1 @@
+# hotelroyal.github.io
