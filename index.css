@@ -377,4 +377,46 @@ nav .navbar .links li .sub-menu li{
 .s11 button:hover{
   color: #182C61;
 }
+.check{
+  width: 80%;
+  position: relative;
+  left: 10%;
+  
+  height:auto;
+  border: 1px solid black;
+  display:flex;
 
+  color: white;
+  background-color: #2d2a2a;
+  justify-content: space-evenly;
+
+}
+.filt button{
+  margin-top:5px;
+  width: 150px;
+  color: white;
+  background-color: tomato;
+  padding: 10px;
+  border: none;
+  font-size: 19px;
+
+  font-style: italic;
+  font-family:sans-serif;
+  cursor: pointer;
+}
+.fit{
+  border: 0px solid khaki;
+}
+@media(max-width:900px){
+  .check{
+    width: 100%;
+    flex-direction: column;
+    left: 0%;
+    text-align: center;
+  }
+  .check div{
+    margin-top: 50px;
+  }
+
+  
+}
