@@ -356,5 +356,25 @@ nav .navbar .links li .sub-menu li{
   background-size: 100% 100%;
 
 }
-
+.s11{
+  text-align: center;
+  color: white;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.s11 button{
+  padding: 10px;
+  background-color:#f7b80b;
+  border: none;
+  width: 200px;
+  margin-top: 40px;
+  transition: 1s linear;
+  font-size: 16px;
+  cursor: pointer;
+  color:black ;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.s11 button:hover{
+  color: #182C61;
+}
 
