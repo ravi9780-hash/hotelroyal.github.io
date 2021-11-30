@@ -467,4 +467,90 @@ nav .navbar .links li .sub-menu li{
   text-align: left;
 
 }
+.bedy{
+  height: 100px;
+  width: 100%;
+  border-top-style: solid;
+  border-top-color: #4e4e4e;
+  border-bottom-style: solid;
+  border-bottom-color: #4e4e4e;
+  text-align: center;
+  margin-top: 20px;
+}
+.bedy img{
+  filter: grayscale(100%);
+  height: 50%;
+  width: 50px;
+  margin-top: 20px;
+}
+.type{
+  display: grid;
+  position: relative;
+  height: 20px;
+  width: 80%;
+  left: 10%;
+ 
+}
+.typeg{
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  grid-template-rows: auto ;
+  column-gap: 20px;
+  height: 200px;
+  width: 80%;
+  left: 10%;
 
+ 
+
+
+}
+.tp1{
+  height: 300px;
+ 
+}
+.tpp1{
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.tpp1 img{
+  width: 100%;
+  height: 60%;
+}
+.tp{
+text-align: center;
+}
+.tp h4{
+  flex: 6;
+}
+.pr{
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  background-color: white;
+ 
+  color:rgb(58, 150, 154);
+  border: 1px solid rgb(58, 150, 154);
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+
+}
+.pr:hover{
+  background-color: rgb(58, 150, 154);
+  color: white;
+
+}
+@media(max-width:900px){
+  .typeg{
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto ;
+  }
+  .typeg .tp1{
+    margin-top: 10px;
+  }
+}
