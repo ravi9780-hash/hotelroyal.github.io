@@ -15,7 +15,9 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
    </head>
 <body>
@@ -72,22 +74,14 @@
   </nav>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-      </div>
+      <div class="swiper-slide" id="s1">Slide 1</div>
+      <div class="swiper-slide" id="s2">Slide 2</div>
+      <div class="swiper-slide" id="s3">Slide 3</div>
+   
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-   
+    <div class="swiper-pagination"></div>
   </div>
   <form action="" class="fit">
 
@@ -126,7 +120,9 @@
      </div>
     </div>
     </form>
-    
+    <h1 style="text-align: center; font-family: 'Bonheur Royale', cursive;
+    font-family: 'Source Sans Pro', sans-serif; word-spacing:10px; margin-top: 20px;">WELCOME TO HOTEL</h1>
+   
     
   
   <script>
@@ -180,7 +176,7 @@ jsArrow.onclick = function() {
 
 <!-- Initialize Swiper -->
 <script>
- var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
         effect:"fade",
@@ -193,10 +189,6 @@ jsArrow.onclick = function() {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        autoplay:{
-      delay:5000,
-      disableOnInteraction:false,
-    },
       });
 </script>
 
