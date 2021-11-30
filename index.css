@@ -304,17 +304,40 @@ nav .navbar .links li .sub-menu li{
 
 .swiper {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 100%;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .check{
@@ -325,6 +348,8 @@ nav .navbar .links li .sub-menu li{
   height:auto;
   border: 1px solid black;
   display:flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   color: white;
   background-color: #2d2a2a;
@@ -345,7 +370,7 @@ nav .navbar .links li .sub-menu li{
   cursor: pointer;
 }
 .fit{
-  border: 0px solid khaki;
+  border: 0px solid black;
 }
 @media(max-width:900px){
   .check{
@@ -359,4 +384,58 @@ nav .navbar .links li .sub-menu li{
   }
 
   
+}
+.swiper {
+  width: 100%;
+  height:80vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+#s1{
+  background-image: url('https://premiumlayers.com/wpwpthemes/hotelbooking/wp-content/uploads/2016/06/hotel-facility-one.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  height: 100vh;
+}
+#s2{
+  background-image: url('https://images.unsplash.com/photo-1638274222556-ee4b26457e95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
+#s3{
+  background-image: url('https://images.unsplash.com/photo-1638237076831-a7f6c9dd58a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
 }
