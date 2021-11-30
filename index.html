@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="index.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+  />
+  <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"  />
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     
+
    </head>
 <body>
   <nav>
     <div class="navbar">
       <i class='bx bx-menu'></i>
-      <div class="logo"><a href="#"><img src="hotel.jpeg" style="height: 82px;"></a></div>
+      <div class="logo"><a href="#"><img src="img/hotel.jpeg" style="height: 82px;"></a></div>
       <div class="nav-links">
         <div class="sidebar-logo">
           <span class="logo-name">Hotel Royal Court</span>
@@ -65,82 +70,69 @@
       </div>
     </div>
   </nav>
-  
-  
-  
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" id="s1">
-      
-      
-      <div class="s11">
-
-
-          <h1>BOOK YOUR SUMMER HOLIDAYS
-            <br>
-            BEYOND ORDINARY
-            
-          </h1>
-          <button>EXPLORE IT</button>
-        </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
       </div>
-      <div class="swiper-slide" id="s2" >
-      
-     
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
       </div>
-      <div class="swiper-slide"  id="s3">
-      
-      
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
       </div>
-     
-      
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
     </div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+   
   </div>
+  <form action="" class="fit">
 
-  
-  
-   <form action="" class="fit">
-
- <div class="check">
-   <div class="room">
-     <h4>BOOK<br> YOUR ROOMS</h4>
-   </div>
-   <div class="caetegory">
-     <h6>ROOM CATEGORY</h6>
-     <label for="cat">  Room Category</label>
-     <select name="cat" id="" style="border: none;">
-       <option value="a1">Super</option>
-       <option value="a2">Medium</option>
-       <option value="a1">Low</option>
-     </select>
-   </div>
-   <div class="roomf">
-
-    <h6>ROOM CATEGORY</h6>
-    <label for="bat">  Room Features</label>
-    <select name="bat" id="" style="border: none;">
-      <option value="b1">Super</option>
-      <option value="b2">Medium</option>
-      <option value="b3">Low</option>
-    </select>
-   </div>
-
-  <div class="range">
-    <h6>Range</h6>
-    <label for="ra" style="margin-top:-10px;">$</label>
-    <input type="range"  class="rang" name="ra" min="0" max="2000" ondrag="up()">
-  </div>
-
-  <div class="filt">
-    <button type="submit">FILTER</button>
-  </div>
- </div>
- </form>
- 
- 
+    <div class="check">
+      <div class="room">
+        <h4>BOOK<br> YOUR ROOMS</h4>
+      </div>
+      <div class="caetegory">
+        <h6>ROOM CATEGORY</h6>
+        <label for="cat">  Room Category</label>
+        <select name="cat" id="" style="border: none;">
+          <option value="a1">Super</option>
+          <option value="a2">Medium</option>
+          <option value="a1">Low</option>
+        </select>
+      </div>
+      <div class="roomf">
+   
+       <h6>ROOM CATEGORY</h6>
+       <label for="bat">  Room Features</label>
+       <select name="bat" id="" style="border: none;">
+         <option value="b1">Super</option>
+         <option value="b2">Medium</option>
+         <option value="b3">Low</option>
+       </select>
+      </div>
+   
+     <div class="range">
+       <h6>Range</h6>
+       <label for="ra" style="margin-top:-10px;">$</label>
+       <input type="range"  class="rang" name="ra" min="0" max="2000" ondrag="up()">
+     </div>
+   
+     <div class="filt">
+       <button type="submit">FILTER</button>
+     </div>
+    </div>
+    </form>
+    
+    
   
   <script>
+  
+  
+   
         // search-box open close js code
 let navbar = document.querySelector(".navbar");
 let searchBox = document.querySelector(".search-box .bx-search");
@@ -182,22 +174,35 @@ jsArrow.onclick = function() {
 }
 
   </script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
-  var swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-     loop:true,
-    autoplay:{
+ var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        effect:"fade",
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay:{
       delay:5000,
       disableOnInteraction:false,
     },
-  });
+      });
 </script>
+
+
+
+
+ 
 </body>
 </html>
