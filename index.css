@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Sans+Pro&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  
 }
 body{
   min-height: 100vh;
@@ -497,7 +498,7 @@ nav .navbar .links li .sub-menu li{
   grid-template-columns: auto auto auto auto ;
   grid-template-rows: auto ;
   column-gap:40px;
-  height: 200px;
+  height:auto;
   width: 80%;
   left: 10%;
 
@@ -527,6 +528,7 @@ nav .navbar .links li .sub-menu li{
 }
 .tp{
 text-align: center;
+color: #182C61;
 }
 .tp h4{
   flex: 6;
@@ -557,5 +559,95 @@ text-align: center;
   }
   .typeg .tp1{
     margin-top: 10px;
+  }
+}
+.facil{
+  height: 120vh;
+  width: 100%;
+  margin-top:50px;
+  background-color: aqua;
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1543325042-c67825847491?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1159&q=80');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  backface-visibility: hidden;
+  color: white;
+}
+.hf{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.facility-icon{
+  width: 50%;
+  display: grid;
+  height: auto;
+  border: none;
+  position: relative;
+  left:30%;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  margin-top: 50px;
+  background-color: #f1f2f6;
+}
+.ft{
+  transition: 0.5s linear;
+  
+}
+
+.ft:hover{
+  color: #182C61;
+
+}
+@media(max-width:900px){
+  .facility-icon{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    left: 20%;
+  }
+
+}
+.fdisplay{
+  width: 80%;
+  height:auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  left: 10%;
+  
+}
+.fimg{
+  flex: 4;
+  justify-content: space-between;
+  height: 50vh;
+}
+.fimg img{
+  width: 80%;
+  margin: 10%;
+
+
+  height: 100%;
+  height: 80%;
+
+}
+.finfo{
+  flex: 8;
+  color: black;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 100px;
+  height: 50vh;
+}
+@media(max-width:900px){
+  .fdisplay{
+   flex-direction: column;
+  }
+.facil{
+  height: auto;
+}
+  .finfo{
+
+    text-align: center;
+    padding-left:0px;
   }
 }
