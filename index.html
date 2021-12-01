@@ -232,7 +232,7 @@
       HOTEL FACILTIES</h1>
     <div class="facility-icon">
       <div class="ic" id="i1"
-        style="text-align: center; color: black; background-color: rgb(231, 222, 222); cursor: pointer;">
+        style="text-align: center; color: black; background-color: rgb(231, 222, 222); cursor: pointer;" onclick="op(1)">
         <img
           src="https://img.icons8.com/external-justicon-lineal-justicon/64/000000/external-wedding-romantic-love-justicon-lineal-justicon.png"
           style="height: 40px; width: 30px; margin-top: 20px;">
@@ -240,7 +240,7 @@
         <h4 class="ft" style="font-family: sans-serif; font-weight: lighter;">MARRIAGE</h4>
       </div>
       <div class="ic" id="i2"
-        style="text-align: center; color: black; background-color: rgb(231, 222, 222); cursor: pointer;">
+        style="text-align: center; color: black; background-color: rgb(231, 222, 222); cursor: pointer;" onclick="op(2)">
 
 
         <img src="https://img.icons8.com/ios/50/000000/ring-side-view.png"
@@ -249,14 +249,14 @@
         <h4 class="ft" style="font-family: sans-serif; font-weight: lighter;">RING CEREMONY</h4>
       </div>
       <div class="ic" id="i3"
-        style="text-align: center; color: black; background-color: rgb(231, 222, 222); cursor: pointer;">
+        style="text-align: center; color: black; background-color: rgb(231, 222, 222); cursor: pointer;" onclick="op(3)">
         <img src="https://img.icons8.com/ios/50/000000/meeting-room.png"
           style="height: 40px; width: 30px; margin-top: 20px;">
         <br>
         <h4 class="ft" style="font-family: sans-serif; font-weight: lighter;">MEETINGS</h4>
       </div>
       <div class="ic" id="i4"
-        style="text-align: center; color: black; background-color: rgb(231, 222, 222); cursor: pointer;" onclick="op()">
+        style="text-align: center; color: black; background-color: rgb(231, 222, 222); cursor: pointer;" onclick="op(4)">
         <img src="https://img.icons8.com/ios/50/000000/dancing-party.png"
           style="height: 40px; width: 30px; margin-top: 20px;">
         <br>
@@ -268,14 +268,14 @@
     <div class="fdisplay">
       <div class="fimg">
         <img
-          src="https://images.unsplash.com/photo-1542042161784-26ab9e041e89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          src="https://images.unsplash.com/photo-1542042161784-26ab9e041e89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" id="ttim"
           alt="">
 
       </div>
       <div class="finfo">
         <p style="font-weight: 100; ">THE WORLD CLASS</p>
-        <h1 style="font-family:fantasy;font-size: 30px; margin-top:30px;">WEDDING</h1>
-        <p style="font-size: 18px; word-spacing: 10px; justify-content: flex-end; margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat iste dolorem! Facere laudantium iste
+        <h1 style="font-family:fantasy;font-size: 30px; margin-top:30px;" id="ttl">WEDDING</h1>
+        <p style="font-size: 18px; word-spacing: 10px; justify-content: flex-end; margin-top: 20px;" id="ttd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat iste dolorem! Facere laudantium iste
           nisi aspernatur aliquid labore harum quidem, officiis distinctio vitae possimus dolore asperiores, quos
           tempore nemo animi facilis tenetur temporibus. Perferendis quis necessitatibus animi tempore inventore odio
           excepturi omnis corrupti suscipit molestias obcaecati corporis voluptates quaerat autem, ratione illo fugit
@@ -356,9 +356,42 @@
     });
   </script>
   <script>
-    function op() {
-      document.getElementById("i4").style.backgroundColor = "white";
-      alert("white");
+    function op(n) {
+      if(n==1){
+        document.getElementById("i1").style.backgroundColor="white";
+      }
+      else if(n==2){
+        document.getElementById("i2").style.backgroundColor="white";
+        document.getElementById("ttl").innerHTML="RING CEREMONY"
+        document.getElementById("ttim").src="https://images.unsplash.com/photo-1554047310-ab6170fc7b10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
+        document.getElementById("i1").style.backgroundColor="#f1f2f6";
+        document.getElementById("i3").style.backgroundColor="#f1f2f6";
+
+        document.getElementById("i4").style.backgroundColor="#f1f2f6";
+
+
+
+      }
+      else if(n==3){
+        document.getElementById("i3").style.backgroundColor="white";
+        document.getElementById("ttl").innerHTML="MEETINGS"
+        document.getElementById("ttim").src="https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80";
+        document.getElementById("i1").style.backgroundColor="#f1f2f6";
+        document.getElementById("i2").style.backgroundColor="#f1f2f6";
+
+        document.getElementById("i4").style.backgroundColor="#f1f2f6";
+
+      }
+      else if(n==4){
+        document.getElementById("i4").style.backgroundColor="white";
+        document.getElementById("ttl").innerHTML="PARTY"
+        document.getElementById("ttim").src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
+        document.getElementById("i1").style.backgroundColor="#f1f2f6";
+        document.getElementById("i2").style.backgroundColor="#f1f2f6";
+
+        document.getElementById("i3").style.backgroundColor="#f1f2f6";
+
+      }
     }
   </script>
 
